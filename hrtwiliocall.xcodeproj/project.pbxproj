@@ -12,7 +12,59 @@
 		44504C561E1A838B00EE442A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44504C541E1A838B00EE442A /* Main.storyboard */; };
 		44504C581E1A838B00EE442A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44504C571E1A838B00EE442A /* Assets.xcassets */; };
 		44504C5B1E1A838B00EE442A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44504C591E1A838B00EE442A /* LaunchScreen.storyboard */; };
+		44504C681E1A840F00EE442A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44504C661E1A840F00EE442A /* Interface.storyboard */; };
+		44504C6A1E1A840F00EE442A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44504C691E1A840F00EE442A /* Assets.xcassets */; };
+		44504C711E1A840F00EE442A /* hrtwiliocallwatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44504C701E1A840F00EE442A /* hrtwiliocallwatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44504C781E1A840F00EE442A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44504C771E1A840F00EE442A /* InterfaceController.swift */; };
+		44504C7A1E1A840F00EE442A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44504C791E1A840F00EE442A /* ExtensionDelegate.swift */; };
+		44504C7C1E1A840F00EE442A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44504C7B1E1A840F00EE442A /* NotificationController.swift */; };
+		44504C7E1E1A840F00EE442A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44504C7D1E1A840F00EE442A /* Assets.xcassets */; };
+		44504C821E1A840F00EE442A /* hrtwiliocallwatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 44504C641E1A840E00EE442A /* hrtwiliocallwatch.app */; };
+		44504C8E1E1A841B00EE442A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44504C8D1E1A841B00EE442A /* HealthKit.framework */; };
+		44504C911E1A845B00EE442A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44504C901E1A845B00EE442A /* HealthKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44504C721E1A840F00EE442A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44504C451E1A838A00EE442A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44504C6F1E1A840F00EE442A;
+			remoteInfo = "hrtwiliocallwatch Extension";
+		};
+		44504C801E1A840F00EE442A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44504C451E1A838A00EE442A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44504C631E1A840E00EE442A;
+			remoteInfo = hrtwiliocallwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44504C881E1A840F00EE442A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44504C711E1A840F00EE442A /* hrtwiliocallwatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44504C8A1E1A840F00EE442A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				44504C821E1A840F00EE442A /* hrtwiliocallwatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		44504C4D1E1A838A00EE442A /* hrtwiliocall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrtwiliocall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +74,21 @@
 		44504C571E1A838B00EE442A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44504C5A1E1A838B00EE442A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44504C5C1E1A838B00EE442A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44504C641E1A840E00EE442A /* hrtwiliocallwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrtwiliocallwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44504C671E1A840F00EE442A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		44504C691E1A840F00EE442A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44504C6B1E1A840F00EE442A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44504C701E1A840F00EE442A /* hrtwiliocallwatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hrtwiliocallwatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44504C761E1A840F00EE442A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		44504C771E1A840F00EE442A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		44504C791E1A840F00EE442A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		44504C7B1E1A840F00EE442A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		44504C7D1E1A840F00EE442A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44504C7F1E1A840F00EE442A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44504C8B1E1A841B00EE442A /* hrtwiliocallwatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hrtwiliocallwatch Extension.entitlements"; sourceTree = "<group>"; };
+		44504C8D1E1A841B00EE442A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		44504C8F1E1A845B00EE442A /* hrtwiliocall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hrtwiliocall.entitlements; sourceTree = "<group>"; };
+		44504C901E1A845B00EE442A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +96,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44504C911E1A845B00EE442A /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44504C6D1E1A840F00EE442A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44504C8E1E1A841B00EE442A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				44504C4F1E1A838A00EE442A /* hrtwiliocall */,
+				44504C651E1A840F00EE442A /* hrtwiliocallwatch */,
+				44504C741E1A840F00EE442A /* hrtwiliocallwatch Extension */,
 				44504C4E1E1A838A00EE442A /* Products */,
+				44504C8C1E1A841B00EE442A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				44504C4D1E1A838A00EE442A /* hrtwiliocall.app */,
+				44504C641E1A840E00EE442A /* hrtwiliocallwatch.app */,
+				44504C701E1A840F00EE442A /* hrtwiliocallwatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +135,7 @@
 		44504C4F1E1A838A00EE442A /* hrtwiliocall */ = {
 			isa = PBXGroup;
 			children = (
+				44504C8F1E1A845B00EE442A /* hrtwiliocall.entitlements */,
 				44504C501E1A838A00EE442A /* AppDelegate.swift */,
 				44504C521E1A838B00EE442A /* ViewController.swift */,
 				44504C541E1A838B00EE442A /* Main.storyboard */,
@@ -62,6 +144,47 @@
 				44504C5C1E1A838B00EE442A /* Info.plist */,
 			);
 			path = hrtwiliocall;
+			sourceTree = "<group>";
+		};
+		44504C651E1A840F00EE442A /* hrtwiliocallwatch */ = {
+			isa = PBXGroup;
+			children = (
+				44504C661E1A840F00EE442A /* Interface.storyboard */,
+				44504C691E1A840F00EE442A /* Assets.xcassets */,
+				44504C6B1E1A840F00EE442A /* Info.plist */,
+			);
+			path = hrtwiliocallwatch;
+			sourceTree = "<group>";
+		};
+		44504C741E1A840F00EE442A /* hrtwiliocallwatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44504C8B1E1A841B00EE442A /* hrtwiliocallwatch Extension.entitlements */,
+				44504C771E1A840F00EE442A /* InterfaceController.swift */,
+				44504C791E1A840F00EE442A /* ExtensionDelegate.swift */,
+				44504C7B1E1A840F00EE442A /* NotificationController.swift */,
+				44504C7D1E1A840F00EE442A /* Assets.xcassets */,
+				44504C7F1E1A840F00EE442A /* Info.plist */,
+				44504C751E1A840F00EE442A /* Supporting Files */,
+			);
+			path = "hrtwiliocallwatch Extension";
+			sourceTree = "<group>";
+		};
+		44504C751E1A840F00EE442A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44504C761E1A840F00EE442A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44504C8C1E1A841B00EE442A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44504C901E1A845B00EE442A /* HealthKit.framework */,
+				44504C8D1E1A841B00EE442A /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +197,51 @@
 				44504C491E1A838A00EE442A /* Sources */,
 				44504C4A1E1A838A00EE442A /* Frameworks */,
 				44504C4B1E1A838A00EE442A /* Resources */,
+				44504C8A1E1A840F00EE442A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				44504C811E1A840F00EE442A /* PBXTargetDependency */,
 			);
 			name = hrtwiliocall;
 			productName = hrtwiliocall;
 			productReference = 44504C4D1E1A838A00EE442A /* hrtwiliocall.app */;
 			productType = "com.apple.product-type.application";
+		};
+		44504C631E1A840E00EE442A /* hrtwiliocallwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44504C891E1A840F00EE442A /* Build configuration list for PBXNativeTarget "hrtwiliocallwatch" */;
+			buildPhases = (
+				44504C621E1A840E00EE442A /* Resources */,
+				44504C881E1A840F00EE442A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44504C731E1A840F00EE442A /* PBXTargetDependency */,
+			);
+			name = hrtwiliocallwatch;
+			productName = hrtwiliocallwatch;
+			productReference = 44504C641E1A840E00EE442A /* hrtwiliocallwatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		44504C6F1E1A840F00EE442A /* hrtwiliocallwatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44504C871E1A840F00EE442A /* Build configuration list for PBXNativeTarget "hrtwiliocallwatch Extension" */;
+			buildPhases = (
+				44504C6C1E1A840F00EE442A /* Sources */,
+				44504C6D1E1A840F00EE442A /* Frameworks */,
+				44504C6E1E1A840F00EE442A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hrtwiliocallwatch Extension";
+			productName = "hrtwiliocallwatch Extension";
+			productReference = 44504C701E1A840F00EE442A /* hrtwiliocallwatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +257,26 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6NUB37727Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					44504C631E1A840E00EE442A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6NUB37727Z;
+						ProvisioningStyle = Automatic;
+					};
+					44504C6F1E1A840F00EE442A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6NUB37727Z;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -115,6 +294,8 @@
 			projectRoot = "";
 			targets = (
 				44504C4C1E1A838A00EE442A /* hrtwiliocall */,
+				44504C631E1A840E00EE442A /* hrtwiliocallwatch */,
+				44504C6F1E1A840F00EE442A /* hrtwiliocallwatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +311,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44504C621E1A840E00EE442A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44504C6A1E1A840F00EE442A /* Assets.xcassets in Resources */,
+				44504C681E1A840F00EE442A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44504C6E1E1A840F00EE442A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44504C7E1E1A840F00EE442A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +340,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44504C6C1E1A840F00EE442A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44504C7C1E1A840F00EE442A /* NotificationController.swift in Sources */,
+				44504C7A1E1A840F00EE442A /* ExtensionDelegate.swift in Sources */,
+				44504C781E1A840F00EE442A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44504C731E1A840F00EE442A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44504C6F1E1A840F00EE442A /* hrtwiliocallwatch Extension */;
+			targetProxy = 44504C721E1A840F00EE442A /* PBXContainerItemProxy */;
+		};
+		44504C811E1A840F00EE442A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44504C631E1A840E00EE442A /* hrtwiliocallwatch */;
+			targetProxy = 44504C801E1A840F00EE442A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		44504C541E1A838B00EE442A /* Main.storyboard */ = {
@@ -159,6 +380,14 @@
 				44504C5A1E1A838B00EE442A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		44504C661E1A840F00EE442A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44504C671E1A840F00EE442A /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = hrtwiliocall/hrtwiliocall.entitlements;
 				DEVELOPMENT_TEAM = 6NUB37727Z;
 				INFOPLIST_FILE = hrtwiliocall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,12 +504,85 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = hrtwiliocall/hrtwiliocall.entitlements;
 				DEVELOPMENT_TEAM = 6NUB37727Z;
 				INFOPLIST_FILE = hrtwiliocall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lsie.hrtwiliocall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		44504C831E1A840F00EE442A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NUB37727Z;
+				IBSC_MODULE = hrtwiliocallwatch_Extension;
+				INFOPLIST_FILE = hrtwiliocallwatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = lsie.hrtwiliocall.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		44504C841E1A840F00EE442A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NUB37727Z;
+				IBSC_MODULE = hrtwiliocallwatch_Extension;
+				INFOPLIST_FILE = hrtwiliocallwatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = lsie.hrtwiliocall.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		44504C851E1A840F00EE442A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "hrtwiliocallwatch Extension/hrtwiliocallwatch Extension.entitlements";
+				DEVELOPMENT_TEAM = 6NUB37727Z;
+				INFOPLIST_FILE = "hrtwiliocallwatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lsie.hrtwiliocall.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		44504C861E1A840F00EE442A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "hrtwiliocallwatch Extension/hrtwiliocallwatch Extension.entitlements";
+				DEVELOPMENT_TEAM = 6NUB37727Z;
+				INFOPLIST_FILE = "hrtwiliocallwatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lsie.hrtwiliocall.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -300,6 +603,23 @@
 			buildConfigurations = (
 				44504C601E1A838B00EE442A /* Debug */,
 				44504C611E1A838B00EE442A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44504C871E1A840F00EE442A /* Build configuration list for PBXNativeTarget "hrtwiliocallwatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44504C851E1A840F00EE442A /* Debug */,
+				44504C861E1A840F00EE442A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44504C891E1A840F00EE442A /* Build configuration list for PBXNativeTarget "hrtwiliocallwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44504C831E1A840F00EE442A /* Debug */,
+				44504C841E1A840F00EE442A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

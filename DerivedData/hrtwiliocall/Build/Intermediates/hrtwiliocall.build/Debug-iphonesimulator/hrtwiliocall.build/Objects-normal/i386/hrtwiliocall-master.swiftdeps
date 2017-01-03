@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "1b27f1dfa1fedbac0fc79fd23b973eaf"
+build_time: [536741279, 840346000]
+inputs:
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocall/ViewController.swift": [536676755, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocall/AppDelegate.swift": [536676736, 0]

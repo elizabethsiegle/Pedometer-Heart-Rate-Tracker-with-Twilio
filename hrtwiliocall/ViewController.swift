@@ -18,6 +18,11 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
     var wcSesh : WCSession!
     var timeToCall: Bool = false //init
     
+    //button, text field
+    @IBOutlet weak var numTextField: UITextField!
+    
+    @IBOutlet weak var enterButton: UIButton!
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)!
     }

@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C27hrtwiliocallwatch_Extension17ExtensionDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "applicationWillResignActive"
 - "applicationDidFinishLaunching"
+- "applicationWillResignActive"
+- "applicationDidBecomeActive"
 depends-top-level:
 - "ExtensionDelegate"
-- "NSObject"
 - "WKExtensionDelegate"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]

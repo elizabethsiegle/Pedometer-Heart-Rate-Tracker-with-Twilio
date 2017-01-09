@@ -106,8 +106,8 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
     }
     
     func workoutDidEnd(_ date : Date) {
-        if createHeartRateStreamingQuery(date) != nil {
-            healthStore.stop(self.currQuery!)
+        if let query = createHeartRateStreamingQuery(date) {
+            healthStore.stop(query)
             label.setText("---")
             workoutSesh = nil
             self.isMoving = false

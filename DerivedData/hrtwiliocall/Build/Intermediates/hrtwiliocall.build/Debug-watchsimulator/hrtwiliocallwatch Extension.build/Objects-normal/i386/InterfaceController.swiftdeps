@@ -6,79 +6,79 @@ provides-nominal:
 provides-member:
 - ["C27hrtwiliocallwatch_Extension19InterfaceController", ""]
 provides-dynamic-lookup:
-- "arrHr"
-- "willActivate"
-- "session"
-- "startStopButton"
-- "createHeartRateStreamingQuery"
-- "workoutActive"
-- "anchor"
-- "startBtnTapped"
 - "wcSesh"
+- "session"
+- "arrHr"
+- "startStopButton"
+- "workoutActive"
 - "isMoving"
-- "label"
+- "anchor"
+- "willActivate"
 - "hrVal"
-- "hrUnit"
 - "workoutSession"
 - "workoutSession"
 - "awake"
-- "beginWorkout"
+- "createHeartRateStreamingQuery"
+- "startBtnTapped"
+- "hrUnit"
 - "workoutDidStart"
 - "healthStore"
 - "displayNotAllowed"
 - "currQuery"
 - "workoutSesh"
 - "heart"
+- "label"
 - "updateHeartRate"
 - "workoutDidEnd"
+- "beginWorkout"
 depends-top-level:
-- "HKQueryAnchor"
-- "Bool"
-- "HKQuery"
 - "HKWorkoutSessionState"
-- "InterfaceController"
 - !private "Void"
-- !private "Set"
-- !private "HKQuantityType"
-- "Error"
-- !private "HKQuantitySample"
-- !private "fatalError"
-- !private "HKObjectType"
-- !private "print"
-- !private "!="
-- !private "HKWorkoutConfiguration"
-- !private "UnicodeScalarType"
-- "Int"
-- !private "DispatchQueue"
-- !private "Array"
-- !private "NSCompoundPredicate"
-- "HKAnchoredObjectQueryNoAnchor"
-- !private "HKAnchoredObjectQuery"
-- "HKUnit"
-- !private "UInt16"
-- "BooleanLiteralType"
-- "Double"
-- "WCSessionDelegate"
-- "HKSample"
-- "WKInterfaceController"
-- "HKWorkoutSessionDelegate"
-- !private "HKObjectQueryNoLimit"
 - "WCSession"
-- !private "Dictionary"
-- !private "String"
-- !private "HKQuantityTypeIdentifier"
-- "WCSessionActivationState"
-- "HKHealthStore"
+- "WKInterfaceController"
+- "HKQueryAnchor"
+- "WKInterfaceLabel"
+- "Bool"
+- !private "Set"
 - "CastingPrecedence"
+- !private "HKQuantityType"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "NSLog"
-- "WKExtensionDelegate"
-- "Date"
-- "WKInterfaceLabel"
-- "HKWorkoutSession"
 - "WKInterfaceButton"
+- !private "HKQuantitySample"
+- !private "HKAnchoredObjectQuery"
+- "HKSample"
+- !private "print"
+- !private "HKObjectType"
+- !private "UnicodeScalarType"
+- !private "String"
+- !private "Array"
+- "Int"
+- "WKExtensionDelegate"
+- !private "Dictionary"
+- !private "HKWorkoutConfiguration"
+- "HKAnchoredObjectQueryNoAnchor"
+- !private "fatalError"
+- "WCSessionDelegate"
+- "HKUnit"
+- "Double"
+- "BooleanLiteralType"
+- !private "!="
+- !private "DispatchQueue"
+- !private "HKObjectQueryNoLimit"
+- !private "NSCompoundPredicate"
+- !private "UInt16"
+- "HKWorkoutSessionDelegate"
+- !private "HKQuantityTypeIdentifier"
+- "WCSessionActivationState"
+- "Error"
+- "HKHealthStore"
 - "StringLiteralType"
+- "InterfaceController"
+- "Date"
+- "HKWorkoutSession"
+- "HKQuery"
+- !private "NSLog"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - ["Ps9AnyObject", "Double"]
@@ -705,7 +705,6 @@ depends-member:
 - ["PSo24HKWorkoutSessionDelegate", "applicationWillResignActive"]
 - !private ["PSo24HKWorkoutSessionDelegate", "beginWorkout"]
 - !private ["PSo24HKWorkoutSessionDelegate", "createHeartRateStreamingQuery"]
-- !private ["PSo24HKWorkoutSessionDelegate", "currQuery"]
 - ["PSo24HKWorkoutSessionDelegate", "didReceive"]
 - ["PSo24HKWorkoutSessionDelegate", "didReceiveLocalNotification"]
 - ["PSo24HKWorkoutSessionDelegate", "didReceiveRemoteNotification"]
@@ -1276,7 +1275,6 @@ depends-member:
 - ["PSo17WCSessionDelegate", "applicationWillResignActive"]
 - !private ["PSo17WCSessionDelegate", "beginWorkout"]
 - !private ["PSo17WCSessionDelegate", "createHeartRateStreamingQuery"]
-- !private ["PSo17WCSessionDelegate", "currQuery"]
 - ["PSo17WCSessionDelegate", "didReceive"]
 - ["PSo17WCSessionDelegate", "didReceiveLocalNotification"]
 - ["PSo17WCSessionDelegate", "didReceiveRemoteNotification"]
@@ -1336,7 +1334,6 @@ depends-member:
 - ["PSo19WKExtensionDelegate", "applicationWillResignActive"]
 - !private ["PSo19WKExtensionDelegate", "beginWorkout"]
 - !private ["PSo19WKExtensionDelegate", "createHeartRateStreamingQuery"]
-- !private ["PSo19WKExtensionDelegate", "currQuery"]
 - ["PSo19WKExtensionDelegate", "didReceive"]
 - ["PSo19WKExtensionDelegate", "didReceiveLocalNotification"]
 - ["PSo19WKExtensionDelegate", "didReceiveRemoteNotification"]

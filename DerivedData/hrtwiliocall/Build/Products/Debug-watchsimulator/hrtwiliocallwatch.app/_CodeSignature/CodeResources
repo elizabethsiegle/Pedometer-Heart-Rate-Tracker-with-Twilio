@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		H6nmJrZgmgOgOMcsDfl+78Bv8ZI=
+		MRw02tC5mIrhyaVsVwYUCjGuLG4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -74,15 +74,15 @@
 		</data>
 		<key>PlugIns/hrtwiliocallwatch Extension.appex/Info.plist</key>
 		<data>
-		kD0X/H5kdFK2GHkpKIS1LKJTNYE=
+		onOwkPjGG3uKrxdYcllFyOWGmuY=
 		</data>
 		<key>PlugIns/hrtwiliocallwatch Extension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		X6lcTjGSkBBVBY5Lro9idamVa2U=
+		lGqZKjT1pXXPeUx/RsNqgnXfkPM=
 		</data>
 		<key>PlugIns/hrtwiliocallwatch Extension.appex/hrtwiliocallwatch Extension</key>
 		<data>
-		r9tYsJ7nzTfDwUdAf7jBs+0YumM=
+		SpYOpJwzmllYY053M9iPPI85i/c=
 		</data>
 		<key>_WatchKitStub/WK</key>
 		<data>
@@ -264,33 +264,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kD0X/H5kdFK2GHkpKIS1LKJTNYE=
+			onOwkPjGG3uKrxdYcllFyOWGmuY=
 			</data>
 			<key>hash2</key>
 			<data>
-			eRrQAtX8hYmKoWWyse1vV+wqFKhkQdUtik9p5NivZpA=
+			vhL9Q1hdcLy56rIs1GBRbMOzh2ELuwp3uMcab85Ub54=
 			</data>
 		</dict>
 		<key>PlugIns/hrtwiliocallwatch Extension.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X6lcTjGSkBBVBY5Lro9idamVa2U=
+			lGqZKjT1pXXPeUx/RsNqgnXfkPM=
 			</data>
 			<key>hash2</key>
 			<data>
-			8lRjy6pgp8nIrunAI1/CyFM93SPc5bUf/xw+XhzKQ94=
+			+BwbzgyuwWh2Q5aJAw08Pnj7uexUGyFti0aJb5WqBZc=
 			</data>
 		</dict>
 		<key>PlugIns/hrtwiliocallwatch Extension.appex/hrtwiliocallwatch Extension</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r9tYsJ7nzTfDwUdAf7jBs+0YumM=
+			SpYOpJwzmllYY053M9iPPI85i/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			KIBLNfXGllfHtuJscIsoJ4SXw2IHJPb9F6Ob+tu/tmA=
+			KR2DmgmgeMh3pFG05pez3Q+H+I3wTN46CvRhWTk2LcQ=
 			</data>
 		</dict>
 		<key>_WatchKitStub/WK</key>

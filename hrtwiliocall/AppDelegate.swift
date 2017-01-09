@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         super.init()
     }
     
-    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    fileprivate func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [AnyHashable: Any]?) -> Bool {
         if WCSession.isSupported() {
             session = WCSession.default()
             session!.delegate = self
@@ -97,7 +97,7 @@ extension AppDelegate: WCSessionDelegate {
     }
     
     
-    private func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+    fileprivate func session(_ session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
         
         if let hrVal = message["heart rate value"] as? String {
             self.someData.append(hrVal)

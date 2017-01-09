@@ -18,22 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-kf-9Jz">
-                                <frame key="frameInset" minX="139" minY="163" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="phone Number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-kf-9Jz">
+                                <frame key="frameInset" minX="68" minY="163" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJV-UQ-83c">
+                            
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJV-UQ-83c">
                                 <frame key="frameInset" minX="164" minY="235" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yaR-kf-9Jz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5v2-Up-NX6"/>
-                            <constraint firstItem="yaR-kf-9Jz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JZJ-pV-MQ1"/>
+                            <constraint firstItem="eJV-UQ-83c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3w4-Do-A65"/>
+                            <constraint firstItem="yaR-kf-9Jz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Akg-fQ-aJn"/>
+                            <constraint firstItem="eJV-UQ-83c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kml-u7-5eP"/>
+                            <constraint firstItem="eJV-UQ-83c" firstAttribute="top" secondItem="yaR-kf-9Jz" secondAttribute="bottom" constant="55" id="OsP-my-dNw"/>
+                            <constraint firstItem="eJV-UQ-83c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cpp-3M-Z6J"/>
                         </constraints>
                     </view>
                     <connections>
@@ -43,6 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>

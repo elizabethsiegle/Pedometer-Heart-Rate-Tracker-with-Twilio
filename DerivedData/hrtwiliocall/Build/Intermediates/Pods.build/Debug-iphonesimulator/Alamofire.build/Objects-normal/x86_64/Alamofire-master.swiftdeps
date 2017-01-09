@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "18b9364ac1331bf85be2f0794c9d6aec"
+build_time: [537268199, 521272000]
+inputs:
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/AFError.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Alamofire.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/MultipartFormData.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Notifications.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/ParameterEncoding.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Request.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Response.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/ResponseSerialization.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Result.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/ServerTrustPolicy.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/SessionDelegate.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/SessionManager.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/TaskDelegate.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Timeline.swift": [537265365, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/Pods/Alamofire/Source/Validation.swift": [537265365, 0]

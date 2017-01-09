@@ -1,0 +1,90 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NotificationController"
+provides-nominal:
+- "C27hrtwiliocallwatch_Extension22NotificationController"
+provides-member:
+- ["C27hrtwiliocallwatch_Extension22NotificationController", ""]
+provides-dynamic-lookup:
+- "willActivate"
+- "didDeactivate"
+depends-top-level:
+- "WKUserNotificationInterfaceController"
+- "NotificationController"
+depends-member:
+- ["Ps9AnyObject", "didDeactivate"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "willActivate"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "didDeactivate"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "willActivate"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "didDeactivate"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "willActivate"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "didDeactivate"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "willActivate"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "didDeactivate"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "willActivate"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "didDeactivate"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "willActivate"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "didDeactivate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "willActivate"]
+- ["PSo16NSObjectProtocol", "didDeactivate"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "willActivate"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C27hrtwiliocallwatch_Extension22NotificationController", "deinit"]
+- ["C27hrtwiliocallwatch_Extension22NotificationController", "didDeactivate"]
+- ["C27hrtwiliocallwatch_Extension22NotificationController", "init"]
+- ["C27hrtwiliocallwatch_Extension22NotificationController", "willActivate"]
+- ["CSo21WKInterfaceController", "didDeactivate"]
+- ["CSo21WKInterfaceController", "init"]
+- ["CSo21WKInterfaceController", "willActivate"]
+- ["CSo37WKUserNotificationInterfaceController", "deinit"]
+- ["CSo37WKUserNotificationInterfaceController", "didDeactivate"]
+- ["CSo37WKUserNotificationInterfaceController", "init"]
+- ["CSo37WKUserNotificationInterfaceController", "willActivate"]
+- ["CSo37WKUserNotificationInterfaceController", ""]
+- ["Ps9_Hashable", "didDeactivate"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "willActivate"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C27hrtwiliocallwatch_Extension22NotificationController"
+- "CSo21WKInterfaceController"
+- "CSo37WKUserNotificationInterfaceController"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/WatchKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/HomeKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreLocation.swiftmodule"
+interface-hash: "fa0892e79f5156c1c3e491454ffc1866"

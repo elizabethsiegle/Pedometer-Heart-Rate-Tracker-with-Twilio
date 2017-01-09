@@ -22,6 +22,7 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
     var wcSesh : WCSession!
     var timeToCall: Bool = false //init
     
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)!
     }
@@ -36,6 +37,7 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
             wcSesh.delegate = self
             wcSesh.activate()
         }
+        phoneNumTextField.keyboardType = UIKeyboardType.phonePad
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -70,8 +72,8 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
             "Content-Type": "application/x-www-form-urlencoded"
         ]
         let parameters: Parameters = [
-            "To": phoneNumberField.text ?? "",
-            "Body": messageField.text ?? ""
+            "To": phoneNumTextField.text ?? "",
+            "Body": heartRateVal
         ]
         
         Alamofire.request("YOUR_NGROK_URL/sms", method: .post, parameters: parameters, headers: headers).response { response in

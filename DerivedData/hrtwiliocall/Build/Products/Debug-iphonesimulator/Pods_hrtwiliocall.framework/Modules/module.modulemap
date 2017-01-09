@@ -1,6 +1,0 @@
-framework module Pods_hrtwiliocall {
-  umbrella header "Pods-hrtwiliocall-umbrella.h"
-
-  export *
-  module * { export * }
-}

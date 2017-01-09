@@ -3,8 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>LastAccessedDate</key>
+<<<<<<< HEAD
 	<date>2017-01-09T09:56:17Z</date>
+=======
+	<date>2017-01-09T07:01:47Z</date>
+>>>>>>> parent of 9a88115... pods, alamofire, done w/ hr
 	<key>WorkspacePath</key>
-	<string>/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocall.xcworkspace</string>
+	<string>/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocall.xcodeproj</string>
 </dict>
 </plist>

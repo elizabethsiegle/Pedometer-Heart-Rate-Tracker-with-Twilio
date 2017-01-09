@@ -21,6 +21,9 @@
 		44504C7E1E1A840F00EE442A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44504C7D1E1A840F00EE442A /* Assets.xcassets */; };
 		44504C8E1E1A841B00EE442A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44504C8D1E1A841B00EE442A /* HealthKit.framework */; };
 		44504C911E1A845B00EE442A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44504C901E1A845B00EE442A /* HealthKit.framework */; };
+		445A2BC61E238E5200D9BC0B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445A2BC51E238E5200D9BC0B /* CoreMotion.framework */; };
+		445A2BC81E238E6600D9BC0B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445A2BC71E238E6600D9BC0B /* CoreMotion.framework */; };
+		445A2BC91E238E6F00D9BC0B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445A2BC71E238E6600D9BC0B /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,8 @@
 		44504C8D1E1A841B00EE442A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		44504C8F1E1A845B00EE442A /* hrtwiliocall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hrtwiliocall.entitlements; sourceTree = "<group>"; };
 		44504C901E1A845B00EE442A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		445A2BC51E238E5200D9BC0B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		445A2BC71E238E6600D9BC0B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		44D83FB81E237059000D5D51 /* hrtwiliocall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrtwiliocall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D83FB91E237059000D5D51 /* hrtwiliocallwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrtwiliocallwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D83FBA1E237059000D5D51 /* hrtwiliocallwatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hrtwiliocallwatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445A2BC81E238E6600D9BC0B /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445A2BC61E238E5200D9BC0B /* CoreMotion.framework in Frameworks */,
 				44504C911E1A845B00EE442A /* HealthKit.framework in Frameworks */,
 				19689E6510AB5EDE7572BDD1 /* Pods_hrtwiliocall.framework in Frameworks */,
 			);
@@ -122,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445A2BC91E238E6F00D9BC0B /* CoreMotion.framework in Frameworks */,
 				44504C8E1E1A841B00EE442A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +200,8 @@
 		44504C8C1E1A841B00EE442A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				445A2BC71E238E6600D9BC0B /* CoreMotion.framework */,
+				445A2BC51E238E5200D9BC0B /* CoreMotion.framework */,
 				44504C901E1A845B00EE442A /* HealthKit.framework */,
 				44504C8D1E1A841B00EE442A /* HealthKit.framework */,
 				BC5C52FA4A160144763D0891 /* Pods_hrtwiliocall.framework */,

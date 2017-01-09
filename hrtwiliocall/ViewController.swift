@@ -9,9 +9,13 @@
 import UIKit
 import WatchConnectivity
 import WebKit
+import Alamofire
 
 class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, WKNavigationDelegate {
     
+    @IBOutlet weak var phoneNumTextField: UITextField!
+    
+    @IBOutlet weak var enterButton: UIButton!
     var minFromArr: Double = 0
     var maxFromArr: Double = 0
     var heartRateVal : Double = 0
@@ -58,6 +62,21 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
     private func session(wcSesh: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
         if let boolFromWatch = message["buttonTap"] as? Bool { //String?
             timeToCall = boolFromWatch
+        }
+    }
+    
+    @IBAction func sendData(sender: AnyObject) {
+        let headers = [
+            "Content-Type": "application/x-www-form-urlencoded"
+        ]
+        let parameters: Parameters = [
+            "To": phoneNumberField.text ?? "",
+            "Body": messageField.text ?? ""
+        ]
+        
+        Alamofire.request("YOUR_NGROK_URL/sms", method: .post, parameters: parameters, headers: headers).response { response in
+            print(response)
+            
         }
     }
     

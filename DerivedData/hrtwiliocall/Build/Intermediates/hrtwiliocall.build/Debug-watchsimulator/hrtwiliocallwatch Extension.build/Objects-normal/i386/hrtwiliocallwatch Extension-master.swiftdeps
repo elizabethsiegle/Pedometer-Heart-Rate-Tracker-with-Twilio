@@ -1,7 +1,0 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "a4c5ad90d41451f4725db7729c946bca"
-build_time: [536741256, 897636000]
-inputs:
-  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocallwatch Extension/NotificationController.swift": [536676623, 0]
-  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocallwatch Extension/ExtensionDelegate.swift": [536676920, 0]
-  "/Users/lizziesiegle/Desktop/programming/twilio/hrtwiliocall/hrtwiliocallwatch Extension/InterfaceController.swift": [536676787, 0]

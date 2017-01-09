@@ -106,8 +106,10 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
     }
     
     func workoutDidEnd(_ date : Date) {
-        if createHeartRateStreamingQuery(date) != nil {
-            healthStore.stop(self.currQuery!)
+        //if createHeartRateStreamingQuery(date) != nil {
+        if let query = createHeartRateStreamingQuery(date) {
+            //healthStore.stop(self.currQuery!)
+            healthStore.stop(query)
             label.setText("---")
             workoutSesh = nil
             self.isMoving = false
@@ -140,7 +142,9 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
             self.isMoving = true
             self.startStopButton.setTitle("Stop👊🏽")
             beginWorkout()
+            print("beginworkout")
         }
+        print("here")
         
     }
     
@@ -148,7 +152,9 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
         
         // If we have already started the workout, then do nothing.
         if (workoutSesh != nil) {
+            print("already started do nothing")
             return
+            
         }
         
         // Configure the workout session.
@@ -164,6 +170,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
         }
         
         healthStore.start(self.workoutSesh!)
+        print("healthstore.startworkoutsesh")
     }
     
     func createHeartRateStreamingQuery(_ workoutStartDate: Date) -> HKQuery? {

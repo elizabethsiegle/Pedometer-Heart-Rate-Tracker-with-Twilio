@@ -1,48 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-<dependencies>
-<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-<plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
-</dependencies>
-<customFonts key="customFonts">
-<array key="Symbol.ttf">
-<string>Symbol</string>
-</array>
-</customFonts>
-<scenes>
-<!--Interface Controller-->
-<scene sceneID="aou-V4-d1y">
-<objects>
-<controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="VimoHeartRate_WatchKit_App" customModuleProvider="target">
-<items>
-<group width="1" alignment="left" id="H1g-Hj-yTZ">
-<items>
-<label width="50" alignment="left" text="Twilio" id="wY5-M2-StO">
-<color key="textColor" red="1" green="0.028310752305397369" blue="0.052215610355601294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-</label>
-<label alignment="right" text="❤️" id="4j5-r9-kub">
-<color key="textColor" red="0.8613288402557373" green="0.058584794402122498" blue="0.11313973367214203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-<fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-</label>
-</items>
-</group>
-<label alignment="center" text="---" minimumScaleFactor="0.20000000000000001" id="hxi-vl-AIJ">
-<fontDescription key="font" name="Symbol" family="Symbol" pointSize="28"/>
-</label>
-<button width="1" alignment="left" title="Start" id="JvV-5H-a2z">
-<connections>
-<action selector="startBtnTapped" destination="AgC-eL-Hgc" id="VIN-tV-rkh"/>
-</connections>
-</button>
-</items>
-<connections>
-<outlet property="heart" destination="4j5-r9-kub" id="NMz-fn-nCv"/>
-<outlet property="label" destination="hxi-vl-AIJ" id="PRr-AV-DXj"/>
-<outlet property="startStopButton" destination="JvV-5H-a2z" id="DmP-mE-c0k"/>
-</connections>
-</controller>
-</objects>
-<point key="canvasLocation" x="305" y="350"/>
-</scene>
-</scenes>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cV7-Yw-xju">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Symbol.ttf">
+            <string>Symbol</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="hrtwiliocallwatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="H1g-Hj-yTZ">
+                            <items>
+                                <label width="50" alignment="left" text="Twilio" id="wY5-M2-StO">
+                                    <color key="textColor" red="1" green="0.028310752305397369" blue="0.052215610355601294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label alignment="right" text="❤️" id="4j5-r9-kub">
+                                    <color key="textColor" red="0.8613288402557373" green="0.058584794402122498" blue="0.11313973367214203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="---" minimumScaleFactor="0.20000000000000001" id="hxi-vl-AIJ">
+                            <fontDescription key="font" name="Symbol" family="Symbol" pointSize="28"/>
+                        </label>
+                        <button width="1" alignment="left" title="Start" id="JvV-5H-a2z">
+                            <connections>
+                                <action selector="startBtnTapped" destination="AgC-eL-Hgc" id="VIN-tV-rkh"/>
+                            </connections>
+                        </button>
+                        <label width="39" alignment="center" verticalAlignment="center" text="Max" textAlignment="center" id="d31-Ld-BFL"/>
+                    </items>
+                    <connections>
+                        <outlet property="heart" destination="4j5-r9-kub" id="NMz-fn-nCv"/>
+                        <outlet property="label" destination="hxi-vl-AIJ" id="PRr-AV-DXj"/>
+                        <outlet property="maxLabel" destination="d31-Ld-BFL" id="uhp-yj-Hrx"/>
+                        <outlet property="startStopButton" destination="JvV-5H-a2z" id="DmP-mE-c0k"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="350"/>
+        </scene>
+        <!--Init Controller-->
+        <scene sceneID="neh-gL-i4Q">
+            <objects>
+                <controller id="cV7-Yw-xju" customClass="InitController" customModule="hrtwiliocallwatch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="nQw-0r-6Zz"/>
+                        <button width="1" alignment="left" title="Heart Rate❤️" id="xp7-S7-lI4">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="7iy-Rr-VYc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Steps👣" id="msZ-qK-adW">
+                            <connections>
+                                <segue destination="WEs-0N-ZUL" kind="push" id="Hx1-2q-RUv"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="72" y="523"/>
+        </scene>
+        <!--Ped-->
+        <scene sceneID="DFw-dH-vnG">
+            <objects>
+                <controller identifier="Ped" id="WEs-0N-ZUL" customClass="PedometerController" customModule="hrtwiliocallwatch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="bI5-BY-aSI">
+                            <items>
+                                <label alignment="left" text="Steps" id="3Nx-Xr-XUf">
+                                    <color key="textColor" red="0.30602918909999999" green="0.22944833919999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label alignment="right" text="3298" id="mJO-9W-oud">
+                                    <color key="textColor" red="0.30602918909999999" green="0.22944833919999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="UKq-7i-Anb">
+                            <items>
+                                <label alignment="left" text="Floors Asc." id="Q2g-WX-AL9">
+                                    <color key="textColor" red="0.31774214000000001" green="1" blue="0.27337388210000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label alignment="right" text="2" id="sca-6h-CNI">
+                                    <color key="textColor" red="0.31774214000000001" green="1" blue="0.27337388210000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="tS9-i7-PWc">
+                            <items>
+                                <label alignment="left" text="Floors Des." id="J0y-nA-Gpx">
+                                    <color key="textColor" red="1" green="0.24420843440000001" blue="0.93301466" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label alignment="right" text="4" id="hND-yG-gqy">
+                                    <color key="textColor" red="1" green="0.24420843440000001" blue="0.93301466" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Vu6-pp-Y8Q">
+                            <items>
+                                <label alignment="left" text="Distance" id="hQc-TA-NJR">
+                                    <color key="textColor" red="0.5" green="0.100762435" blue="0.41693810199999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label alignment="right" text="2.51kms" id="dep-an-y5H">
+                                    <color key="textColor" red="0.5" green="0.100762435" blue="0.41693810199999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="d29-xr-m59">
+                            <items>
+                                <label alignment="left" text="Cadence" id="aOy-0l-llM">
+                                    <color key="textColor" red="0.18890188960000001" green="0.52735003749999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label alignment="right" text="1.1m/s" id="DmV-ci-rKX">
+                                    <color key="textColor" red="0.18890188960000001" green="0.52735003749999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="kcI-w6-K7N">
+                            <items>
+                                <label alignment="left" text="Pace" id="l1K-xp-JsC">
+                                    <color key="textColor" red="0.70357564770000003" green="0.98126291909999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label alignment="right" text="0.7s/m" id="n9E-bi-vwJ">
+                                    <color key="textColor" red="0.70357564770000003" green="0.98126291909999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cadenceCount" destination="DmV-ci-rKX" id="4Qz-mc-2dO"/>
+                        <outlet property="cadenceLbl" destination="aOy-0l-llM" id="WNv-Pg-ozn"/>
+                        <outlet property="distCount" destination="dep-an-y5H" id="CGw-GA-RfR"/>
+                        <outlet property="distLbl" destination="hQc-TA-NJR" id="5Gp-Qp-i81"/>
+                        <outlet property="floorsAscLbl" destination="Q2g-WX-AL9" id="0aM-sL-bVp"/>
+                        <outlet property="floorsDescLbl" destination="J0y-nA-Gpx" id="5hr-L4-JJm"/>
+                        <outlet property="numFloorsAsc" destination="sca-6h-CNI" id="2dm-I8-QUA"/>
+                        <outlet property="numFloorsDesc" destination="hND-yG-gqy" id="SWt-P9-hWE"/>
+                        <outlet property="numSteps" destination="mJO-9W-oud" id="wn8-4Y-xCp"/>
+                        <outlet property="paceCount" destination="n9E-bi-vwJ" id="Y7Z-wW-yGi"/>
+                        <outlet property="paceLbl" destination="l1K-xp-JsC" id="jgD-NQ-ITc"/>
+                        <outlet property="stepsLbl" destination="3Nx-Xr-XUf" id="V1P-kz-Mgq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="780"/>
+        </scene>
+    </scenes>
 </document>

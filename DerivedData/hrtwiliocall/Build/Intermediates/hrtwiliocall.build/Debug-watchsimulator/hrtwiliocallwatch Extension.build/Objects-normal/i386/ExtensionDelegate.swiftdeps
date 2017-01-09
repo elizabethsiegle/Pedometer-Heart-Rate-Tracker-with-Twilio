@@ -10,9 +10,9 @@ provides-dynamic-lookup:
 - "applicationWillResignActive"
 - "applicationDidBecomeActive"
 depends-top-level:
+- "NSObject"
 - "ExtensionDelegate"
 - "WKExtensionDelegate"
-- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]

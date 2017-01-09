@@ -151,26 +151,40 @@ SWIFT_CLASS("_TtC12hrtwiliocall11AppDelegate")
 @end
 
 @class NSCoder;
-@class UITextField;
-@class UIButton;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC12hrtwiliocall14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate, WKNavigationDelegate, WCSessionDelegate>
+SWIFT_CLASS("_TtC12hrtwiliocall18NextViewController")
+@interface NextViewController : UIViewController <WKNavigationDelegate, WCSessionDelegate>
 @property (nonatomic) double minFromArr;
 @property (nonatomic) double maxFromArr;
 @property (nonatomic) double heartRateVal;
 @property (nonatomic, strong) WCSession * _Null_unspecified wcSesh;
 @property (nonatomic) BOOL timeToCall;
+@property (nonatomic, copy) NSString * _Nonnull numToCallFromOtherVC;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)observeValueForKeyPathWithKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSString *, id> * _Nullable)change context:(void * _Nonnull)context;
+- (void)getNumWithStr:(NSString * _Nonnull)str;
+- (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
+- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
+- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
+- (IBAction)sendDataWithSender:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+@class UITextField;
+@class UIButton;
+
+SWIFT_CLASS("_TtC12hrtwiliocall14ViewController")
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified numTextField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified enterButton;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)observeValueForKeyPathWithKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSString *, id> * _Nullable)change context:(void * _Nonnull)context;
-- (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
-- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
-- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
+- (void)sendDataWithMyStringToSend:(NSString * _Nonnull)MyStringToSend;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 

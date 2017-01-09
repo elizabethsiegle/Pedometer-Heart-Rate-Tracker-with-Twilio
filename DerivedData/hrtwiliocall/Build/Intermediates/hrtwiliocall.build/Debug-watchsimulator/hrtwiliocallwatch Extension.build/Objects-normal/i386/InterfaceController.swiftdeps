@@ -6,79 +6,81 @@ provides-nominal:
 provides-member:
 - ["C27hrtwiliocallwatch_Extension19InterfaceController", ""]
 provides-dynamic-lookup:
-- "wcSesh"
-- "session"
-- "arrHr"
-- "startStopButton"
-- "workoutActive"
-- "isMoving"
-- "anchor"
-- "willActivate"
 - "hrVal"
+- "anchor"
+- "workoutDidEnd"
+- "workoutActive"
+- "startStopButton"
+- "wcSesh"
 - "workoutSession"
 - "workoutSession"
-- "awake"
-- "createHeartRateStreamingQuery"
+- "arrHr"
+- "isMoving"
+- "maxLabel"
+- "workoutSesh"
 - "startBtnTapped"
+- "currQuery"
+- "willActivate"
+- "label"
+- "createHeartRateStreamingQuery"
 - "hrUnit"
 - "workoutDidStart"
-- "healthStore"
-- "displayNotAllowed"
-- "currQuery"
-- "workoutSesh"
 - "heart"
-- "label"
-- "updateHeartRate"
-- "workoutDidEnd"
 - "beginWorkout"
+- "healthStore"
+- "awake"
+- "session"
+- "displayNotAllowed"
+- "updateHeartRate"
 depends-top-level:
-- "HKWorkoutSessionState"
-- !private "Void"
-- "WCSession"
-- "WKInterfaceController"
-- "HKQueryAnchor"
+- "HKWorkoutSession"
+- "StringLiteralType"
 - "WKInterfaceLabel"
-- "Bool"
+- "InterfaceController"
 - !private "Set"
-- "CastingPrecedence"
-- !private "HKQuantityType"
+- !private "Dictionary"
+- "WCSessionDelegate"
+- "HKQuery"
+- "BooleanLiteralType"
+- "HKWorkoutSessionDelegate"
+- !private "NSCompoundPredicate"
+- !private "HKQuantitySample"
+- "HKUnit"
+- !private "!="
+- !private "print"
+- "Bool"
+- "WCSession"
+- !private "Array"
+- "WCSessionActivationState"
+- "HKQueryAnchor"
+- "WKInterfaceButton"
+- !private "Void"
+- "Date"
+- !private "UInt16"
+- !private "DispatchQueue"
+- "HKWorkoutSessionState"
+- "HKHealthStore"
+- !private "NSLog"
+- !private "HKObjectQueryNoLimit"
+- !private "String"
+- !private "+"
+- "WKExtensionDelegate"
+- "Error"
+- !private "HKQuantityTypeIdentifier"
+- !private "HKObjectType"
+- "HKSample"
 - "AssignmentPrecedence"
 - !private "=="
-- "WKInterfaceButton"
-- !private "HKQuantitySample"
-- !private "HKAnchoredObjectQuery"
-- "HKSample"
-- !private "print"
-- !private "HKObjectType"
-- !private "UnicodeScalarType"
-- !private "String"
-- !private "Array"
-- "Int"
-- "WKExtensionDelegate"
-- !private "Dictionary"
-- !private "HKWorkoutConfiguration"
-- "HKAnchoredObjectQueryNoAnchor"
 - !private "fatalError"
-- "WCSessionDelegate"
-- "HKUnit"
+- "CastingPrecedence"
+- "Int"
 - "Double"
-- "BooleanLiteralType"
-- !private "!="
-- !private "DispatchQueue"
-- !private "HKObjectQueryNoLimit"
-- !private "NSCompoundPredicate"
-- !private "UInt16"
-- "HKWorkoutSessionDelegate"
-- !private "HKQuantityTypeIdentifier"
-- "WCSessionActivationState"
-- "Error"
-- "HKHealthStore"
-- "StringLiteralType"
-- "InterfaceController"
-- "Date"
-- "HKWorkoutSession"
-- "HKQuery"
-- !private "NSLog"
+- !private "HKAnchoredObjectQuery"
+- !private "HKQuantityType"
+- "WKInterfaceController"
+- !private "HKWorkoutConfiguration"
+- !private "UnicodeScalarType"
+- "HKAnchoredObjectQueryNoAnchor"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - ["Ps9AnyObject", "Double"]
@@ -144,6 +146,7 @@ depends-member:
 - !private ["Ps9AnyObject", "locationType"]
 - !private ["Ps9AnyObject", "main"]
 - ["Ps9AnyObject", "maxArr"]
+- ["Ps9AnyObject", "maxLabel"]
 - ["Ps9AnyObject", "minArr"]
 - !private ["Ps9AnyObject", "predicateForSamples"]
 - !private ["Ps9AnyObject", "print"]
@@ -178,16 +181,19 @@ depends-member:
 - ["Sa", "deinit"]
 - !private ["Sa", "first"]
 - ["Sa", "init"]
+- !private ["Sa", "max"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "first"]
 - ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "max"]
 - !private ["Ps22BidirectionalIndexable", "Element"]
 - !private ["Ps22BidirectionalIndexable", "Iterator"]
 - !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps22BidirectionalIndexable", "first"]
 - ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "max"]
 - ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -260,7 +266,9 @@ depends-member:
 - ["Ps7CVarArg", "label"]
 - !private ["Ps7CVarArg", "locationType"]
 - !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "max"]
 - ["Ps7CVarArg", "maxArr"]
+- ["Ps7CVarArg", "maxLabel"]
 - ["Ps7CVarArg", "minArr"]
 - !private ["Ps7CVarArg", "predicateForSamples"]
 - !private ["Ps7CVarArg", "print"]
@@ -297,6 +305,7 @@ depends-member:
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "first"]
 - ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "max"]
 - !private ["Ps10Comparable", "heartRate"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
@@ -368,7 +377,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "label"]
 - !private ["Ps28CustomDebugStringConvertible", "locationType"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "max"]
 - ["Ps28CustomDebugStringConvertible", "maxArr"]
+- ["Ps28CustomDebugStringConvertible", "maxLabel"]
 - ["Ps28CustomDebugStringConvertible", "minArr"]
 - !private ["Ps28CustomDebugStringConvertible", "predicateForSamples"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -408,6 +419,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "first"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "max"]
 - ["Ps17CustomReflectable", "some"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
 - ["Ps23CustomStringConvertible", "Double"]
@@ -479,7 +491,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "label"]
 - !private ["Ps23CustomStringConvertible", "locationType"]
 - !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "max"]
 - ["Ps23CustomStringConvertible", "maxArr"]
+- ["Ps23CustomStringConvertible", "maxLabel"]
 - ["Ps23CustomStringConvertible", "minArr"]
 - !private ["Ps23CustomStringConvertible", "predicateForSamples"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -588,6 +602,7 @@ depends-member:
 - !private ["Ps9Equatable", "locationType"]
 - !private ["Ps9Equatable", "main"]
 - ["Ps9Equatable", "maxArr"]
+- ["Ps9Equatable", "maxLabel"]
 - ["Ps9Equatable", "minArr"]
 - !private ["Ps9Equatable", "predicateForSamples"]
 - !private ["Ps9Equatable", "print"]
@@ -624,6 +639,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "max"]
 - !private ["Ps25ExpressibleByArrayLiteral", "strictEndDate"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
@@ -703,6 +719,7 @@ depends-member:
 - ["PSo24HKWorkoutSessionDelegate", "applicationDidFinishLaunching"]
 - ["PSo24HKWorkoutSessionDelegate", "applicationWillEnterForeground"]
 - ["PSo24HKWorkoutSessionDelegate", "applicationWillResignActive"]
+- !private ["PSo24HKWorkoutSessionDelegate", "arrHr"]
 - !private ["PSo24HKWorkoutSessionDelegate", "beginWorkout"]
 - !private ["PSo24HKWorkoutSessionDelegate", "createHeartRateStreamingQuery"]
 - ["PSo24HKWorkoutSessionDelegate", "didReceive"]
@@ -721,6 +738,7 @@ depends-member:
 - !private ["PSo24HKWorkoutSessionDelegate", "isMoving"]
 - !private ["PSo24HKWorkoutSessionDelegate", "label"]
 - !private ["PSo24HKWorkoutSessionDelegate", "maxArr"]
+- !private ["PSo24HKWorkoutSessionDelegate", "maxLabel"]
 - !private ["PSo24HKWorkoutSessionDelegate", "minArr"]
 - !private ["PSo24HKWorkoutSessionDelegate", "print"]
 - ["PSo24HKWorkoutSessionDelegate", "session"]
@@ -811,6 +829,7 @@ depends-member:
 - !private ["Ps8Hashable", "locationType"]
 - !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "maxArr"]
+- ["Ps8Hashable", "maxLabel"]
 - ["Ps8Hashable", "minArr"]
 - !private ["Ps8Hashable", "predicateForSamples"]
 - !private ["Ps8Hashable", "print"]
@@ -848,6 +867,7 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "first"]
 - ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "max"]
 - !private ["Ps13IndexableBase", "Element"]
 - !private ["Ps13IndexableBase", "Iterator"]
 - !private ["Ps13IndexableBase", "Key"]
@@ -855,6 +875,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "first"]
 - ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "max"]
 - !private ["Vs16IndexingIterator", "Element"]
 - ["Si", "deinit"]
 - ["Si", "init"]
@@ -926,6 +947,7 @@ depends-member:
 - ["C27hrtwiliocallwatch_Extension19InterfaceController", "isMoving"]
 - !private ["C27hrtwiliocallwatch_Extension19InterfaceController", "label"]
 - ["C27hrtwiliocallwatch_Extension19InterfaceController", "maxArr"]
+- ["C27hrtwiliocallwatch_Extension19InterfaceController", "maxLabel"]
 - ["C27hrtwiliocallwatch_Extension19InterfaceController", "minArr"]
 - !private ["C27hrtwiliocallwatch_Extension19InterfaceController", "print"]
 - ["C27hrtwiliocallwatch_Extension19InterfaceController", "session"]
@@ -952,11 +974,13 @@ depends-member:
 - !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "first"]
 - ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "max"]
 - !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "Iterator"]
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "first"]
 - ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "max"]
 - !private ["PSo8NSCoding", "activityType"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "doubleValue"]
@@ -1046,6 +1070,7 @@ depends-member:
 - !private ["CSo8NSObject", "locationType"]
 - !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "maxArr"]
+- ["CSo8NSObject", "maxLabel"]
 - ["CSo8NSObject", "minArr"]
 - !private ["CSo8NSObject", "predicateForSamples"]
 - !private ["CSo8NSObject", "print"]
@@ -1137,6 +1162,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "locationType"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - ["PSo16NSObjectProtocol", "maxArr"]
+- ["PSo16NSObjectProtocol", "maxLabel"]
 - ["PSo16NSObjectProtocol", "minArr"]
 - !private ["PSo16NSObjectProtocol", "predicateForSamples"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -1186,21 +1212,25 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "first"]
 - ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "max"]
 - !private ["Ps21RandomAccessIndexable", "Element"]
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
 - !private ["Ps21RandomAccessIndexable", "_Element"]
 - !private ["Ps21RandomAccessIndexable", "first"]
 - ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "max"]
 - !private ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps26RangeReplaceableCollection", "Iterator"]
 - !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "first"]
 - ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "max"]
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Iterator"]
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "first"]
 - ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "max"]
 - !private ["Ps16RawRepresentable", "crossTraining"]
 - ["Ps16RawRepresentable", "ended"]
 - !private ["Ps16RawRepresentable", "heartRate"]
@@ -1214,6 +1244,7 @@ depends-member:
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "first"]
 - ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "max"]
 - !private ["Vs3Set", "Element"]
 - ["Vs3Set", "deinit"]
 - !private ["Vs3Set", "init"]
@@ -1273,6 +1304,7 @@ depends-member:
 - ["PSo17WCSessionDelegate", "applicationDidFinishLaunching"]
 - ["PSo17WCSessionDelegate", "applicationWillEnterForeground"]
 - ["PSo17WCSessionDelegate", "applicationWillResignActive"]
+- !private ["PSo17WCSessionDelegate", "arrHr"]
 - !private ["PSo17WCSessionDelegate", "beginWorkout"]
 - !private ["PSo17WCSessionDelegate", "createHeartRateStreamingQuery"]
 - ["PSo17WCSessionDelegate", "didReceive"]
@@ -1291,6 +1323,7 @@ depends-member:
 - !private ["PSo17WCSessionDelegate", "isMoving"]
 - !private ["PSo17WCSessionDelegate", "label"]
 - !private ["PSo17WCSessionDelegate", "maxArr"]
+- !private ["PSo17WCSessionDelegate", "maxLabel"]
 - !private ["PSo17WCSessionDelegate", "minArr"]
 - !private ["PSo17WCSessionDelegate", "print"]
 - ["PSo17WCSessionDelegate", "session"]
@@ -1332,6 +1365,7 @@ depends-member:
 - ["PSo19WKExtensionDelegate", "applicationDidFinishLaunching"]
 - ["PSo19WKExtensionDelegate", "applicationWillEnterForeground"]
 - ["PSo19WKExtensionDelegate", "applicationWillResignActive"]
+- !private ["PSo19WKExtensionDelegate", "arrHr"]
 - !private ["PSo19WKExtensionDelegate", "beginWorkout"]
 - !private ["PSo19WKExtensionDelegate", "createHeartRateStreamingQuery"]
 - ["PSo19WKExtensionDelegate", "didReceive"]
@@ -1350,6 +1384,7 @@ depends-member:
 - !private ["PSo19WKExtensionDelegate", "isMoving"]
 - !private ["PSo19WKExtensionDelegate", "label"]
 - !private ["PSo19WKExtensionDelegate", "maxArr"]
+- !private ["PSo19WKExtensionDelegate", "maxLabel"]
 - !private ["PSo19WKExtensionDelegate", "minArr"]
 - !private ["PSo19WKExtensionDelegate", "print"]
 - ["PSo19WKExtensionDelegate", "session"]
@@ -1428,6 +1463,7 @@ depends-member:
 - ["CSo21WKInterfaceController", "isMoving"]
 - ["CSo21WKInterfaceController", "label"]
 - ["CSo21WKInterfaceController", "maxArr"]
+- ["CSo21WKInterfaceController", "maxLabel"]
 - ["CSo21WKInterfaceController", "minArr"]
 - !private ["CSo21WKInterfaceController", "print"]
 - ["CSo21WKInterfaceController", "session"]
@@ -1454,11 +1490,13 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "first"]
 - ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "max"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "first"]
 - ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "max"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -1537,6 +1575,7 @@ depends-member:
 - !private ["Ps9_Hashable", "locationType"]
 - !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "maxArr"]
+- ["Ps9_Hashable", "maxLabel"]
 - ["Ps9_Hashable", "minArr"]
 - !private ["Ps9_Hashable", "predicateForSamples"]
 - !private ["Ps9_Hashable", "print"]
@@ -1578,6 +1617,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "heartRate"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "max"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - ["Ps14_SignedInteger", "init"]
 - ["Ps11_Strideable", "init"]
@@ -1733,4 +1773,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/SceneKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreLocation.swiftmodule"
-interface-hash: "84d630c1aa5efbd3dda685ec5451624c"
+interface-hash: "8c0d42a95a81312b069fa7b324fa8001"

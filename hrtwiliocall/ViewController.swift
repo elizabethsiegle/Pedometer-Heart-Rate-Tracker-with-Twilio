@@ -7,16 +7,11 @@
 //
 
 import UIKit
-import WatchConnectivity
-import WebKit
 
-class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, WKNavigationDelegate {
+
+class ViewController: UIViewController, UITextViewDelegate {
     
-    var minFromArr: Double = 0
-    var maxFromArr: Double = 0
-    var heartRateVal : Double = 0
-    var wcSesh : WCSession!
-    var timeToCall: Bool = false //init
+   
     
     //button, text field
     @IBOutlet weak var numTextField: UITextField!
@@ -32,11 +27,11 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
         self.view.backgroundColor = UIColor(red: 207, green: 207, blue: 196, alpha:150)
         self.navigationController?.isToolbarHidden = false
         //watchConnectivitySession
-        if(WCSession.isSupported()) {
-            wcSesh = WCSession.default()
-            wcSesh.delegate = self
-            wcSesh.activate()
-        }
+//        if(WCSession.isSupported()) {
+//            wcSesh = WCSession.default()
+//            wcSesh.delegate = self
+//            wcSesh.activate()
+//        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -48,24 +43,45 @@ class ViewController: UIViewController, WCSessionDelegate, UITextViewDelegate, W
     func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutableRawPointer) {
     }
     
-    @available(iOS 9.3, *)
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    //@available(iOS 9.3, *)
+//    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+//        
+//    }
+//    
+//    func sessionDidBecomeInactive(_ session: WCSession) {
+//        print("inactive")
+//    }
+//    
+//    func sessionDidDeactivate(_ session: WCSession) {
+//        print("deactivate")
+//    }
+//    private func session(wcSesh: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+//        if let boolFromWatch = message["buttonTap"] as? Bool { //String?
+//            timeToCall = boolFromWatch
+//        }
+//    }
+//    
+//    @IBAction func sendData(sender: AnyObject) {
+//        let headers = [
+//            "Content-Type": "application/x-www-form-urlencoded"
+//        ]
+//        
+//        let parameters: Parameters = [
+//            "To": numTextField.text ?? "",
+//            "Body": self.heartRateVal
+//        ]
+//        
+//        Alamofire.request("YOUR_NGROK_URL/sms", method: .post, parameters: parameters, headers: headers).response { response in
+//            print(response)
+//            
+//        }
+    //}
+    func sendData(MyStringToSend : String) {
         
+        let CVC = childViewControllers.last as! NextViewController
+        CVC.getNum(str: numTextField.text!)
     }
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("inactive")
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("deactivate")
-    }
-    private func session(wcSesh: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        if let boolFromWatch = message["buttonTap"] as? Bool { //String?
-            timeToCall = boolFromWatch
-        }
-    }
-    
-    
+
 }
 

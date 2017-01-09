@@ -15,13 +15,15 @@ import UIKit
 class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSessionDelegate, WKExtensionDelegate {
     /** Called when the session has completed activation. If session state is WCSessionActivationStateNotActivated there will be an error with more details. */
     @available(watchOS 2.2, *)
-    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    open func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
     
-    @IBOutlet private weak var label: WKInterfaceLabel!
+    @IBOutlet fileprivate weak var label: WKInterfaceLabel!
     @IBOutlet var heart: WKInterfaceLabel!
-    @IBOutlet private weak var startStopButton : WKInterfaceButton!
+    @IBOutlet fileprivate weak var startStopButton : WKInterfaceButton!
+    
+    @IBOutlet var maxLabel: WKInterfaceLabel!
     var maxArr : Double!
     var minArr : Double!
     var arrHr = [Double]()
@@ -194,6 +196,8 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate, WCSe
             guard let sample = heartRateSamples.first else{return}
             let val = sample.quantity.doubleValue(for: self.hrUnit)
             self.label.setText(String(UInt16(val)))
+            self.maxLabel.setText("max: " + String(self.maxArr))
+            self.maxArr = self.arrHr.max()
         }
     }
     

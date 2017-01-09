@@ -1,6 +1,7 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "090c3fd1b5a37ad00ae1815cea2c46ec"
-build_time: [537275233, 273203000]
+options: "eb99f33e306dc7d7e14b0a0d7f1bfdad"
+build_time: [537315961, 560846000]
 inputs:
-  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/hrtwiliocall/ViewController.swift": [537275047, 0]
-  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/hrtwiliocall/AppDelegate.swift": [537275047, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/hrtwiliocall/ViewController.swift": [537315956, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/hrtwiliocall/NextViewController.swift": [537315945, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/hrtwiliocall/AppDelegate.swift": [537276591, 0]

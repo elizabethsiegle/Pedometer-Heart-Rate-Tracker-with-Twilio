@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "9aaa3bd888a90d8a33305db7e4dd1570"
+build_time: [537276651, 178137000]
+inputs:
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/AFError.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Alamofire.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/MultipartFormData.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Notifications.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/ParameterEncoding.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Request.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Response.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/ResponseSerialization.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Result.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/ServerTrustPolicy.swift": [537276521, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/SessionDelegate.swift": [537276522, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/SessionManager.swift": [537276522, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/TaskDelegate.swift": [537276522, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Timeline.swift": [537276522, 0]
+  "/Users/lizziesiegle/Desktop/programming/twilio/PedometerHeartRateTwilioCall/Pods/Alamofire/Source/Validation.swift": [537276522, 0]

@@ -128,6 +128,14 @@ SWIFT_CLASS("_TtC27hrtwiliocallwatch_Extension17ExtensionDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC27hrtwiliocallwatch_Extension14InitController")
+@interface InitController : WKInterfaceController
+- (void)awakeWithContext:(id _Nullable)context;
+- (void)willActivate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class WCSession;
 @class WKInterfaceLabel;
 @class HKHealthStore;
@@ -144,6 +152,7 @@ SWIFT_CLASS("_TtC27hrtwiliocallwatch_Extension19InterfaceController")
 */
 - (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
 @property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified heart;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified maxLabel;
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull arrHr;
 @property (nonatomic, readonly, strong) HKHealthStore * _Nonnull healthStore;
 @property (nonatomic) BOOL workoutActive;
@@ -174,6 +183,28 @@ SWIFT_CLASS("_TtC27hrtwiliocallwatch_Extension22NotificationController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)willActivate;
 - (void)didDeactivate;
+@end
+
+
+SWIFT_CLASS("_TtC27hrtwiliocallwatch_Extension19PedometerController")
+@interface PedometerController : WKInterfaceController
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified stepsLbl;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified numSteps;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified floorsAscLbl;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified numFloorsAsc;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified floorsDescLbl;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified numFloorsDesc;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified distLbl;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified distCount;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified cadenceLbl;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified cadenceCount;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified paceLbl;
+@property (nonatomic, strong) IBOutlet WKInterfaceLabel * _Null_unspecified paceCount;
+- (void)awakeWithContext:(id _Nullable)context;
+- (void)willActivate;
+- (void)didDeactivate;
+- (void)startPedometerUpdates;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop
